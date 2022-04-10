@@ -18,17 +18,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
+        setButton()
+    }
+    
+    private func setUI() {
         imgView.image = UIImage(named: "Instagram Black Logo.png")
         nameTextfield.clearButtonMode = .whileEditing
-        setButton()
     }
     
     // 가입하기 버튼, 다음 VC로 데이터 push
     @IBAction func joinButton(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "UsernameViewController") as? UsernameViewController else { return }
+        guard let userNameVC = self.storyboard?.instantiateViewController(withIdentifier: "UsernameViewController") as? UsernameViewController else { return }
         
         
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.navigationController?.pushViewController(userNameVC, animated: true)
     }
     
     // 로그인 버튼, 마지막 완료 화면으로 modal로 present
