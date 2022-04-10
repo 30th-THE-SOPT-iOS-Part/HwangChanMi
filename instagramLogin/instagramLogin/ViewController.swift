@@ -12,14 +12,14 @@ class ViewController: UIViewController {
     var nameData: String?
     
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var userName: UITextField!
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var nameTextfield: UITextField!
+    @IBOutlet weak var pwTextfield: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imgView.image = UIImage(named: "Instagram Black Logo.png")
-        userName.clearButtonMode = .whileEditing
+        nameTextfield.clearButtonMode = .whileEditing
         setButton()
     }
     
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         guard let joinVC = self.storyboard?.instantiateViewController(withIdentifier: "CompletionViewController") as? CompletionViewController else { return }
         
-        joinVC.nameData = userName.text
+        joinVC.nameData = nameTextfield.text
         
         self.present(joinVC, animated: true, completion: nil)
     }
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
 
     private func setButton(){
-        if userName.hasText && password.hasText {
+        if nameTextfield.hasText && pwTextfield.hasText {
             loginButton.isEnabled = true
         } else{
             loginButton.isEnabled = false

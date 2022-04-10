@@ -9,7 +9,7 @@ import UIKit
 
 class UsernameViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class UsernameViewController: UIViewController {
     @IBAction func nextButton(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as? PasswordViewController else { return }
         
-        nextVC.nameData = textField.text
+        nextVC.nameData = nameTextField.text
         
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
@@ -44,7 +44,7 @@ class UsernameViewController: UIViewController {
     }
     
     private func setButton() {
-        if textField.hasText {
+        if nameTextField.hasText {
             nextButton.isEnabled = true
         } else {
             nextButton.isEnabled = false

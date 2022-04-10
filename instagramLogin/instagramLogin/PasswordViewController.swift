@@ -12,7 +12,7 @@ class PasswordViewController: UIViewController {
     var nameData: String?
     
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var pwTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class PasswordViewController: UIViewController {
     }
     
     private func setButton() {
-        if textField.hasText {
+        if pwTextField.hasText {
             nextButton.isEnabled = true
         } else {
             nextButton.isEnabled = false
