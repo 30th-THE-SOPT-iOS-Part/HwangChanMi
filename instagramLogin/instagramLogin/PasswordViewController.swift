@@ -15,9 +15,18 @@ class PasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setButton()
+        changeBackButton()
         
+    }
+    
+    private func changeBackButton() {
+        let backButton = UIBarButtonItem(image: UIImage(named: "icn_back_24"), style: .done, target: self, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = backButton
+      }
+    
+    @objc func back() {
+      self.navigationController?.popViewController(animated: true)
     }
     
     // 다음 버튼, 입력받은 데이터를 다음 VC를 modal로 present 함.
@@ -32,6 +41,8 @@ class PasswordViewController: UIViewController {
         
         self.present(segue, animated: true, completion: nil)
     }
+    
+    
 
     @IBAction func passEdit(_ sender: Any) {
         setButton()

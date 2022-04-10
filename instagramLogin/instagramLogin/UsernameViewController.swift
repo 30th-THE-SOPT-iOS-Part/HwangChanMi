@@ -15,10 +15,19 @@ class UsernameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // backButton의 색상을 바꾸고, 텍스트를 비웠다.
-        
         setButton()
+        changeBackButton()
     }
+    
+    private func changeBackButton() {
+        let backButton = UIBarButtonItem(image: UIImage(named: "icn_back_24"), style: .done, target: self, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = backButton
+      }
+    
+    @objc func back() {
+      self.navigationController?.popViewController(animated: true)
+    }
+    
     
     // 다음 버튼, textfield의 데이터를 다음 VC로 넘겨 준다. push
     @IBAction func nextButton(_ sender: Any) {
