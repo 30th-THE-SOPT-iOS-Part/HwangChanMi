@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // 이미지 아웃렛 변수
+    var nameData: String?
+    
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -28,13 +29,15 @@ class ViewController: UIViewController {
     @IBAction func joinButton(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "UsernameViewController") as? UsernameViewController else { return }
         
-        self.navigationController?.pushViewController(nextVC, animated: true)
         
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     // 로그인 버튼, 마지막 완료 화면으로 modal로 present
     @IBAction func loginButton(_ sender: Any) {
         guard let joinVC = self.storyboard?.instantiateViewController(withIdentifier: "CompletionViewController") as? CompletionViewController else { return }
+        
+        joinVC.nameData = userName.text
         
         self.present(joinVC, animated: true, completion: nil)
     }
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
     
     // back button 이미지 바꾸기 -> 안되는 이유?
     private func changeBackButton() {
-        let backButton = UIImage(named: "icon-back-24.png")
+        let backButton = UIImage(named: "icon-back-24")
 
         self.navigationController?.navigationBar.backIndicatorImage = backButton
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButton
