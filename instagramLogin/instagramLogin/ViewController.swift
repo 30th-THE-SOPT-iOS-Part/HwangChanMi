@@ -14,15 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var loginState: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imgView.image = UIImage(named: "Instagram Black Logo.png")
         userName.clearButtonMode = .whileEditing
         setButton()
-        
-        changeBackButton()
     }
     
     // 가입하기 버튼, 다음 VC로 데이터 push
@@ -42,16 +40,6 @@ class ViewController: UIViewController {
         self.present(joinVC, animated: true, completion: nil)
     }
     
-    
-    // back button 이미지 바꾸기 -> 안되는 이유?
-    private func changeBackButton() {
-        let backButton = UIImage(named: "icon-back-24")
-
-        self.navigationController?.navigationBar.backIndicatorImage = backButton
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButton
-        self.navigationItem.backButtonTitle = ""
-    }
-    
     @IBAction func nameEdit(_ sender: Any) {
         setButton()
     }
@@ -62,9 +50,9 @@ class ViewController: UIViewController {
 
     private func setButton(){
         if userName.hasText && password.hasText {
-            loginState.isEnabled = true
+            loginButton.isEnabled = true
         } else{
-            loginState.isEnabled = false
+            loginButton.isEnabled = false
         }
     }
 
