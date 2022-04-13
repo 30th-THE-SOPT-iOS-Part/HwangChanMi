@@ -10,12 +10,13 @@ import UIKit
 class ViewController: UIViewController {
     
     var nameData: String?
+    let button = UIButton(type: .custom)
     
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     private func setUI() {
         imgView.image = UIImage(named: "Instagram Black Logo.png")
         nameTextfield.clearButtonMode = .whileEditing
+        pwTextfield.setIcon(UIImage(named: "password hidden eye icon"))
     }
     
     // 가입하기 버튼, 다음 VC로 데이터 push
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         
         self.navigationController?.pushViewController(userNameVC, animated: true)
     }
+
     
     // 로그인 버튼, 마지막 완료 화면으로 modal로 present
     @IBAction func loginButton(_ sender: Any) {
