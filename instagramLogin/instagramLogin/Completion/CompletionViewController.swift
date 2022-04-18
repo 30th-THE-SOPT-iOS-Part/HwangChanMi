@@ -26,11 +26,23 @@ class CompletionViewController: UIViewController {
         }
     }
     
-    @IBAction func completionButton(_ sender: Any) {    //나를 호출한 VC
+    @IBAction func completionButton(_ sender: Any) {
+        // 완료 버튼 클릭 -> 탭 바 화면으로 이동
+        
+        let tabbarSB = UIStoryboard(name: "TabBar", bundle: nil)
+        let tabbarCV = tabbarSB.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+        
+        tabbarCV.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        present(tabbarCV, animated: true, completion: nil)
+    }
+    
+    @IBAction func otherAccountButton(_ sender: Any) {
+        // 처음 화면으로 돌아가기
         guard let welcomeVC = self.presentingViewController as? UINavigationController else { return }
 
         self.dismiss(animated: true) {
             welcomeVC.popToRootViewController(animated: true)
         }
     }
+    
 }
