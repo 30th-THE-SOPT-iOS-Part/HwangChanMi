@@ -27,10 +27,10 @@ class CompletionViewController: UIViewController {
     }
     
     @IBAction func completionButton(_ sender: Any) {    //나를 호출한 VC
-        guard let firstVC = self.presentingViewController as? UINavigationController else { return }
+        guard let welcomeVC = self.presentingViewController as? UINavigationController else { return }
 
         self.dismiss(animated: true) {
-            firstVC.popToRootViewController(animated: true)
+            welcomeVC.popToRootViewController(animated: true)
         }
     }
 }
