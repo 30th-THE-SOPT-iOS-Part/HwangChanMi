@@ -33,8 +33,9 @@ class PasswordViewController: UIViewController {
     // 다음 버튼, 입력받은 데이터를 다음 VC를 modal로 present 함.
     @IBAction func nextButton(_ sender: Any) {
         
-        guard let completionVC = self.storyboard?.instantiateViewController(withIdentifier: "CompletionViewController") as? CompletionViewController else { return }
-        
+        let completionSB = UIStoryboard(name: "Completion", bundle: nil)
+        let completionVC = completionSB.instantiateViewController(withIdentifier: "CompletionViewController") as! CompletionViewController
+    
         // 전달받은 데이터의 값이 있으면, 다음 VC 프로퍼티로 값을 넘겨 준다
         if let nameData = nameData {
             completionVC.nameData = nameData
