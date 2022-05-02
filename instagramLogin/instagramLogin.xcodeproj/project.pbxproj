@@ -98,21 +98,29 @@
 		4A476B3F27FB319300E653CB /* instagramLogin */ = {
 			isa = PBXGroup;
 			children = (
+				4A75D2AA28204DF1001B5DB4 /* New Group */,
 				4A7E8919282033B4003066CB /* TabBar */,
 				4A7E8937282033F4003066CB /* Completion */,
 				4A7E893C2820340A003066CB /* Password */,
 				4A7E89412820341A003066CB /* Username */,
-				4A476B4627FB319300E653CB /* Main.storyboard */,
+				4A7E894628203473003066CB /* Welcome */,
 				4A476B4927FB319300E653CB /* Assets.xcassets */,
 				4A476B4027FB319300E653CB /* AppDelegate.swift */,
 				4A476B4427FB319300E653CB /* ViewController.swift */,
+				4A476B4627FB319300E653CB /* Main.storyboard */,
 				4A476B4227FB319300E653CB /* SceneDelegate.swift */,
 				4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
 				4A7E890C282032CD003066CB /* UITexField++.swift */,
-				4A7E894628203473003066CB /* Welcome */,
 			);
 			path = instagramLogin;
+			sourceTree = "<group>";
+		};
+		4A75D2AA28204DF1001B5DB4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		4A7E8919282033B4003066CB /* TabBar */ = {
