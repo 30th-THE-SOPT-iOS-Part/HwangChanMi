@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A344BAE27FB39B400A925AF /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A344BAD27FB39B400A925AF /* UsernameViewController.swift */; };
-		4A344BB027FB39CD00A925AF /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A344BAF27FB39CD00A925AF /* PasswordViewController.swift */; };
-		4A344BB227FB39F500A925AF /* CompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A344BB127FB39F500A925AF /* CompletionViewController.swift */; };
 		4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476B4027FB319300E653CB /* AppDelegate.swift */; };
 		4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476B4227FB319300E653CB /* SceneDelegate.swift */; };
 		4A476B4527FB319300E653CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476B4427FB319300E653CB /* ViewController.swift */; };
 		4A476B4827FB319300E653CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4627FB319300E653CB /* Main.storyboard */; };
 		4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4927FB319300E653CB /* Assets.xcassets */; };
 		4A476B4D27FB319300E653CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */; };
+		4A7E890D282032CD003066CB /* UITexField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E890C282032CD003066CB /* UITexField++.swift */; };
+		4A7E892B282033B4003066CB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E891B282033B4003066CB /* Home.storyboard */; };
+		4A7E892C282033B4003066CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E891C282033B4003066CB /* HomeViewController.swift */; };
+		4A7E892D282033B4003066CB /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E891E282033B4003066CB /* Shop.storyboard */; };
+		4A7E892E282033B4003066CB /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E891F282033B4003066CB /* ShopViewController.swift */; };
+		4A7E892F282033B4003066CB /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E8921282033B4003066CB /* Reels.storyboard */; };
+		4A7E8930282033B4003066CB /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8922282033B4003066CB /* ReelsViewController.swift */; };
+		4A7E8931282033B4003066CB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8924282033B4003066CB /* SearchViewController.swift */; };
+		4A7E8932282033B4003066CB /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E8925282033B4003066CB /* Search.storyboard */; };
+		4A7E8933282033B4003066CB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E8927282033B4003066CB /* Profile.storyboard */; };
+		4A7E8934282033B4003066CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8928282033B4003066CB /* ProfileViewController.swift */; };
+		4A7E8935282033B4003066CB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E8929282033B4003066CB /* TabBar.storyboard */; };
+		4A7E8936282033B4003066CB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E892A282033B4003066CB /* TabBarController.swift */; };
+		4A7E893A282033F4003066CB /* CompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8938282033F4003066CB /* CompletionViewController.swift */; };
+		4A7E893B282033F4003066CB /* Completion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E8939282033F4003066CB /* Completion.storyboard */; };
+		4A7E893F2820340A003066CB /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E893D2820340A003066CB /* PasswordViewController.swift */; };
+		4A7E89402820340A003066CB /* Password.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E893E2820340A003066CB /* Password.storyboard */; };
+		4A7E89442820341A003066CB /* Username.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E89422820341A003066CB /* Username.storyboard */; };
+		4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E89432820341A003066CB /* UsernameViewController.swift */; };
+		4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E894728203473003066CB /* WelcomeViewController.swift */; };
+		4A7E894D28203483003066CB /* welcom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E894C28203483003066CB /* welcom.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A344BAD27FB39B400A925AF /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
-		4A344BAF27FB39CD00A925AF /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
-		4A344BB127FB39F500A925AF /* CompletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionViewController.swift; sourceTree = "<group>"; };
 		4A476B3D27FB319300E653CB /* instagramLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A476B4027FB319300E653CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A476B4227FB319300E653CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +45,27 @@
 		4A476B4927FB319300E653CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A476B4C27FB319300E653CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A476B4E27FB319300E653CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7E890C282032CD003066CB /* UITexField++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITexField++.swift"; sourceTree = "<group>"; };
+		4A7E891B282033B4003066CB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4A7E891C282033B4003066CB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A7E891E282033B4003066CB /* Shop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		4A7E891F282033B4003066CB /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		4A7E8921282033B4003066CB /* Reels.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reels.storyboard; sourceTree = "<group>"; };
+		4A7E8922282033B4003066CB /* ReelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		4A7E8924282033B4003066CB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4A7E8925282033B4003066CB /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		4A7E8927282033B4003066CB /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		4A7E8928282033B4003066CB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4A7E8929282033B4003066CB /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		4A7E892A282033B4003066CB /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4A7E8938282033F4003066CB /* CompletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionViewController.swift; sourceTree = "<group>"; };
+		4A7E8939282033F4003066CB /* Completion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Completion.storyboard; sourceTree = "<group>"; };
+		4A7E893D2820340A003066CB /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		4A7E893E2820340A003066CB /* Password.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Password.storyboard; sourceTree = "<group>"; };
+		4A7E89422820341A003066CB /* Username.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Username.storyboard; sourceTree = "<group>"; };
+		4A7E89432820341A003066CB /* UsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
+		4A7E894728203473003066CB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		4A7E894C28203483003066CB /* welcom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = welcom.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +98,117 @@
 		4A476B3F27FB319300E653CB /* instagramLogin */ = {
 			isa = PBXGroup;
 			children = (
-				4A476B4027FB319300E653CB /* AppDelegate.swift */,
-				4A476B4227FB319300E653CB /* SceneDelegate.swift */,
-				4A476B4427FB319300E653CB /* ViewController.swift */,
-				4A344BAD27FB39B400A925AF /* UsernameViewController.swift */,
+				4A7E8919282033B4003066CB /* TabBar */,
+				4A7E8937282033F4003066CB /* Completion */,
+				4A7E893C2820340A003066CB /* Password */,
+				4A7E89412820341A003066CB /* Username */,
 				4A476B4627FB319300E653CB /* Main.storyboard */,
 				4A476B4927FB319300E653CB /* Assets.xcassets */,
+				4A476B4027FB319300E653CB /* AppDelegate.swift */,
+				4A476B4427FB319300E653CB /* ViewController.swift */,
+				4A476B4227FB319300E653CB /* SceneDelegate.swift */,
 				4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
-				4A344BAF27FB39CD00A925AF /* PasswordViewController.swift */,
-				4A344BB127FB39F500A925AF /* CompletionViewController.swift */,
+				4A7E890C282032CD003066CB /* UITexField++.swift */,
+				4A7E894628203473003066CB /* Welcome */,
 			);
 			path = instagramLogin;
+			sourceTree = "<group>";
+		};
+		4A7E8919282033B4003066CB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E891A282033B4003066CB /* Home */,
+				4A7E891D282033B4003066CB /* Shop */,
+				4A7E8920282033B4003066CB /* Reels */,
+				4A7E8923282033B4003066CB /* Search */,
+				4A7E8926282033B4003066CB /* Profile */,
+				4A7E8929282033B4003066CB /* TabBar.storyboard */,
+				4A7E892A282033B4003066CB /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4A7E891A282033B4003066CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E891B282033B4003066CB /* Home.storyboard */,
+				4A7E891C282033B4003066CB /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A7E891D282033B4003066CB /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E891E282033B4003066CB /* Shop.storyboard */,
+				4A7E891F282033B4003066CB /* ShopViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		4A7E8920282033B4003066CB /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8921282033B4003066CB /* Reels.storyboard */,
+				4A7E8922282033B4003066CB /* ReelsViewController.swift */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		4A7E8923282033B4003066CB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8924282033B4003066CB /* SearchViewController.swift */,
+				4A7E8925282033B4003066CB /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4A7E8926282033B4003066CB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8927282033B4003066CB /* Profile.storyboard */,
+				4A7E8928282033B4003066CB /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4A7E8937282033F4003066CB /* Completion */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8938282033F4003066CB /* CompletionViewController.swift */,
+				4A7E8939282033F4003066CB /* Completion.storyboard */,
+			);
+			path = Completion;
+			sourceTree = "<group>";
+		};
+		4A7E893C2820340A003066CB /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E893D2820340A003066CB /* PasswordViewController.swift */,
+				4A7E893E2820340A003066CB /* Password.storyboard */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		4A7E89412820341A003066CB /* Username */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E89422820341A003066CB /* Username.storyboard */,
+				4A7E89432820341A003066CB /* UsernameViewController.swift */,
+			);
+			path = Username;
+			sourceTree = "<group>";
+		};
+		4A7E894628203473003066CB /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E894728203473003066CB /* WelcomeViewController.swift */,
+				4A7E894C28203483003066CB /* welcom.storyboard */,
+			);
+			name = Welcome;
+			path = "../../../../../../Downloads/HwangChanMi-main/instagramLogin/instagramLogin/Welcome";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +270,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A476B4D27FB319300E653CB /* LaunchScreen.storyboard in Resources */,
+				4A7E8935282033B4003066CB /* TabBar.storyboard in Resources */,
+				4A7E893B282033F4003066CB /* Completion.storyboard in Resources */,
+				4A7E892D282033B4003066CB /* Shop.storyboard in Resources */,
+				4A7E8933282033B4003066CB /* Profile.storyboard in Resources */,
+				4A7E89402820340A003066CB /* Password.storyboard in Resources */,
+				4A7E894D28203483003066CB /* welcom.storyboard in Resources */,
+				4A7E89442820341A003066CB /* Username.storyboard in Resources */,
 				4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */,
 				4A476B4827FB319300E653CB /* Main.storyboard in Resources */,
+				4A7E8932282033B4003066CB /* Search.storyboard in Resources */,
+				4A7E892F282033B4003066CB /* Reels.storyboard in Resources */,
+				4A7E892B282033B4003066CB /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,10 +293,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A476B4527FB319300E653CB /* ViewController.swift in Sources */,
-				4A344BB027FB39CD00A925AF /* PasswordViewController.swift in Sources */,
-				4A344BB227FB39F500A925AF /* CompletionViewController.swift in Sources */,
+				4A7E8936282033B4003066CB /* TabBarController.swift in Sources */,
+				4A7E893A282033F4003066CB /* CompletionViewController.swift in Sources */,
+				4A7E8931282033B4003066CB /* SearchViewController.swift in Sources */,
+				4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */,
+				4A7E892E282033B4003066CB /* ShopViewController.swift in Sources */,
+				4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */,
+				4A7E890D282032CD003066CB /* UITexField++.swift in Sources */,
+				4A7E892C282033B4003066CB /* HomeViewController.swift in Sources */,
+				4A7E8934282033B4003066CB /* ProfileViewController.swift in Sources */,
+				4A7E8930282033B4003066CB /* ReelsViewController.swift in Sources */,
+				4A7E893F2820340A003066CB /* PasswordViewController.swift in Sources */,
 				4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */,
-				4A344BAE27FB39B400A925AF /* UsernameViewController.swift in Sources */,
 				4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

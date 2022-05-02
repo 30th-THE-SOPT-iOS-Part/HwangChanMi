@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Username View Controller-->
+        <scene sceneID="5l8-NH-R7X">
+            <objects>
+                <viewController storyboardIdentifier="UsernameViewController" id="wVF-hQ-K5e" customClass="UsernameViewController" customModule="instagramLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gdh-1j-y7p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새계정에 사용할 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-1S-nF8">
+                                <rect key="frame" x="57" y="142" width="300" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGA-Xk-Hii">
+                                <rect key="frame" x="16" y="192.5" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameEdit:" destination="wVF-hQ-K5e" eventType="editingChanged" id="oBO-QG-NMh"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7l-Po-a6C">
+                                <rect key="frame" x="16" y="248.5" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ijt-bc-rpJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="다음"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="wVF-hQ-K5e" eventType="touchUpInside" id="w7W-ef-FP0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 이름 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp2-gh-ZTA">
+                                <rect key="frame" x="118.5" y="94" width="177" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dKS-G2-zZg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NGA-Xk-Hii" firstAttribute="centerX" secondItem="dKS-G2-zZg" secondAttribute="centerX" id="3Kk-cD-MIi"/>
+                            <constraint firstItem="zWZ-1S-nF8" firstAttribute="leading" secondItem="dKS-G2-zZg" secondAttribute="leading" constant="57" id="C2t-9p-xXC"/>
+                            <constraint firstItem="zWZ-1S-nF8" firstAttribute="top" secondItem="hp2-gh-ZTA" secondAttribute="bottom" constant="19" id="FPt-Md-Paw"/>
+                            <constraint firstItem="g7l-Po-a6C" firstAttribute="top" secondItem="NGA-Xk-Hii" secondAttribute="bottom" constant="22" id="Fi4-Ah-IYs"/>
+                            <constraint firstItem="dKS-G2-zZg" firstAttribute="trailing" secondItem="NGA-Xk-Hii" secondAttribute="trailing" constant="16" id="G7b-X1-KRz"/>
+                            <constraint firstItem="hp2-gh-ZTA" firstAttribute="top" secondItem="Gdh-1j-y7p" secondAttribute="top" constant="94" id="Gtp-F7-SBG"/>
+                            <constraint firstItem="zWZ-1S-nF8" firstAttribute="centerX" secondItem="dKS-G2-zZg" secondAttribute="centerX" id="PIS-Ao-n5G"/>
+                            <constraint firstItem="g7l-Po-a6C" firstAttribute="leading" secondItem="dKS-G2-zZg" secondAttribute="leading" constant="16" id="SSK-pN-nTF"/>
+                            <constraint firstItem="hp2-gh-ZTA" firstAttribute="centerX" secondItem="dKS-G2-zZg" secondAttribute="centerX" id="nhd-Od-3i2"/>
+                            <constraint firstItem="dKS-G2-zZg" firstAttribute="trailing" secondItem="g7l-Po-a6C" secondAttribute="trailing" constant="16" id="tZ6-8b-c3J"/>
+                            <constraint firstItem="NGA-Xk-Hii" firstAttribute="leading" secondItem="dKS-G2-zZg" secondAttribute="leading" constant="16" id="v5y-l9-DVW"/>
+                            <constraint firstItem="NGA-Xk-Hii" firstAttribute="top" secondItem="zWZ-1S-nF8" secondAttribute="bottom" constant="19" id="vdb-FH-6F6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jNh-fN-LRA"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="NGA-Xk-Hii" id="cnf-Bm-uL2"/>
+                        <outlet property="nextButton" destination="g7l-Po-a6C" id="IGr-ul-Zhb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5V-Ij-TZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
