@@ -37,12 +37,6 @@ class UsernameViewController: UIViewController {
         passwordVC.nameData = nameTextField.text
         
         self.navigationController?.pushViewController(passwordVC, animated: true)
-        
-//        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as? PasswordViewController else { return }
-//
-//        nextVC.nameData = nameTextField.text
-//
-//        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 
 

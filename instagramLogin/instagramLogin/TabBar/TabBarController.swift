@@ -18,41 +18,40 @@ class TabBarController: UITabBarController {
     func setTabBarController() {
         
         tabBar.unselectedItemTintColor = .black
-
-        guard let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController"),
-              let searchVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController"),
-              let reelsVC = self.storyboard?.instantiateViewController(withIdentifier: "ReelsViewController"),
-              let shopVC = self.storyboard?.instantiateViewController(withIdentifier: "ShopViewController"),
-              let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") else { return}
-    
+        tabBar.tintColor = .black
         
+        let homeSB = UIStoryboard(name: "Home", bundle: nil)
+        let searchSB = UIStoryboard(name: "Search", bundle: nil)
+        let reelsSB = UIStoryboard(name: "Reels", bundle: nil)
+        let shopSB = UIStoryboard(name: "Shop", bundle: nil)
+        let profileSB = UIStoryboard(name: "Profile", bundle: nil)
+        
+        guard let homeVC = homeSB.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController,
+              let searchVC = searchSB.instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController,
+              let reelsVC = reelsSB.instantiateViewController(withIdentifier: "ReelsViewController") as? ReelsViewController,
+              let shopVC = shopSB.instantiateViewController(withIdentifier: "ShopViewController") as? ShopViewController,
+              let profileVC = profileSB.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController else { return }
+
         homeVC.tabBarItem = UITabBarItem(
             title: "", image: UIImage(named: "icn_home"), selectedImage: UIImage(named: "icn_home_seleted"))
-        
+
         searchVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icn_search"), selectedImage: UIImage(named: "icn_search_seleted"))
-        
+
         reelsVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icn_reels"), selectedImage: UIImage(named: "icn_reels_seleted"))
-        
+
         shopVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icn_shop"), selectedImage: UIImage(named: "icn_shop_seleted"))
-        
+
         profileVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icn_profile")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "icn_profile_seleted")?.withRenderingMode(.alwaysOriginal))
-        
+
         setViewControllers([homeVC, searchVC, reelsVC, shopVC, profileVC], animated: true)
         
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem){
-            if item != (tabBar.items!)[2] {
-                tabBar.backgroundColor = .white
-                tabBar.tintColor = .black
-                tabBar.unselectedItemTintColor = .black
-            }
-            else{
-                tabBar.backgroundColor = .black
-                tabBar.tintColor = .white
-                tabBar.unselectedItemTintColor = .white
-            }
-        }
+        tabBar.backgroundColor = item != (tabBar.items!)[2] ? .white : .black
+        tabBar.tintColor = item != (tabBar.items!)[2] ? .black : .white
+        tabBar.unselectedItemTintColor = item != (tabBar.items!)[2] ? .black : .white
+    }
 
 }
 
