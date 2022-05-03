@@ -13,6 +13,8 @@
 		4A476B4827FB319300E653CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4627FB319300E653CB /* Main.storyboard */; };
 		4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4927FB319300E653CB /* Assets.xcassets */; };
 		4A476B4D27FB319300E653CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */; };
+		4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */; };
+		4A75D2B0282052E5001B5DB4 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */; };
 		4A7E890D282032CD003066CB /* UITexField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E890C282032CD003066CB /* UITexField++.swift */; };
 		4A7E892B282033B4003066CB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E891B282033B4003066CB /* Home.storyboard */; };
 		4A7E892C282033B4003066CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E891C282033B4003066CB /* HomeViewController.swift */; };
@@ -34,6 +36,7 @@
 		4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E89432820341A003066CB /* UsernameViewController.swift */; };
 		4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E894728203473003066CB /* WelcomeViewController.swift */; };
 		4A7E894D28203483003066CB /* welcom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E894C28203483003066CB /* welcom.storyboard */; };
+		4AA2A6CA28210A2E00AE2161 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2A6C928210A2E00AE2161 /* FeedDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,8 @@
 		4A476B4927FB319300E653CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A476B4C27FB319300E653CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A476B4E27FB319300E653CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		4A7E890C282032CD003066CB /* UITexField++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITexField++.swift"; sourceTree = "<group>"; };
 		4A7E891B282033B4003066CB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4A7E891C282033B4003066CB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		4A7E89432820341A003066CB /* UsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
 		4A7E894728203473003066CB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4A7E894C28203483003066CB /* welcom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = welcom.storyboard; sourceTree = "<group>"; };
+		4AA2A6C928210A2E00AE2161 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,8 @@
 		4A476B3F27FB319300E653CB /* instagramLogin */ = {
 			isa = PBXGroup;
 			children = (
-				4A75D2AA28204DF1001B5DB4 /* New Group */,
+				4A75D2B228205334001B5DB4 /* HomeDataModels */,
+				4A75D2AA28204DF1001B5DB4 /* FeedCell */,
 				4A7E8919282033B4003066CB /* TabBar */,
 				4A7E8937282033F4003066CB /* Completion */,
 				4A7E893C2820340A003066CB /* Password */,
@@ -116,11 +123,21 @@
 			path = instagramLogin;
 			sourceTree = "<group>";
 		};
-		4A75D2AA28204DF1001B5DB4 /* New Group */ = {
+		4A75D2AA28204DF1001B5DB4 /* FeedCell */ = {
 			isa = PBXGroup;
 			children = (
+				4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */,
+				4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */,
 			);
-			path = "New Group";
+			path = FeedCell;
+			sourceTree = "<group>";
+		};
+		4A75D2B228205334001B5DB4 /* HomeDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				4AA2A6C928210A2E00AE2161 /* FeedDataModel.swift */,
+			);
+			path = HomeDataModels;
 			sourceTree = "<group>";
 		};
 		4A7E8919282033B4003066CB /* TabBar */ = {
@@ -290,6 +307,7 @@
 				4A7E8932282033B4003066CB /* Search.storyboard in Resources */,
 				4A7E892F282033B4003066CB /* Reels.storyboard in Resources */,
 				4A7E892B282033B4003066CB /* Home.storyboard in Resources */,
+				4A75D2B0282052E5001B5DB4 /* FeedTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +322,7 @@
 				4A7E8936282033B4003066CB /* TabBarController.swift in Sources */,
 				4A7E893A282033F4003066CB /* CompletionViewController.swift in Sources */,
 				4A7E8931282033B4003066CB /* SearchViewController.swift in Sources */,
+				4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */,
 				4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */,
 				4A7E892E282033B4003066CB /* ShopViewController.swift in Sources */,
 				4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */,
@@ -312,6 +331,7 @@
 				4A7E8934282033B4003066CB /* ProfileViewController.swift in Sources */,
 				4A7E8930282033B4003066CB /* ReelsViewController.swift in Sources */,
 				4A7E893F2820340A003066CB /* PasswordViewController.swift in Sources */,
+				4AA2A6CA28210A2E00AE2161 /* FeedDataModel.swift in Sources */,
 				4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */,
 				4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */,
 			);
