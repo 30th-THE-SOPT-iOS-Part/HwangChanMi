@@ -36,7 +36,14 @@
 		4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E89432820341A003066CB /* UsernameViewController.swift */; };
 		4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E894728203473003066CB /* WelcomeViewController.swift */; };
 		4A7E894D28203483003066CB /* welcom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E894C28203483003066CB /* welcom.storyboard */; };
-		4AA2A6CA28210A2E00AE2161 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2A6C928210A2E00AE2161 /* FeedDataModel.swift */; };
+		4A7F2F9628215D59000984A9 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F2F9528215D59000984A9 /* FeedDataModel.swift */; };
+		4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE497A282190B20064556D /* StoryCollectionViewCell.swift */; };
+		4AAE497D282190B20064556D /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */; };
+		4AAE497F282193300064556D /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE497E282193300064556D /* StoryDataModel.swift */; };
+		4AB714EA28227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */; };
+		4AD2013B28216757005BE378 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013A28216757005BE378 /* Image.swift */; };
+		4AD2013D28216782005BE378 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013C28216782005BE378 /* Const.swift */; };
+		4AD2013F2821686E005BE378 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013E2821686E005BE378 /* Icon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +78,14 @@
 		4A7E89432820341A003066CB /* UsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
 		4A7E894728203473003066CB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4A7E894C28203483003066CB /* welcom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = welcom.storyboard; sourceTree = "<group>"; };
-		4AA2A6C928210A2E00AE2161 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
+		4A7F2F9528215D59000984A9 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
+		4AAE497A282190B20064556D /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		4AAE497E282193300064556D /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
+		4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIHomeNavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		4AD2013A28216757005BE378 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		4AD2013C28216782005BE378 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		4AD2013E2821686E005BE378 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +118,9 @@
 		4A476B3F27FB319300E653CB /* instagramLogin */ = {
 			isa = PBXGroup;
 			children = (
-				4A75D2B228205334001B5DB4 /* HomeDataModels */,
+				4AB714E828227BF200D0AEF1 /* Extension */,
+				4AD2013928216715005BE378 /* Constants */,
+				4A75D2B228205334001B5DB4 /* StoryCell */,
 				4A75D2AA28204DF1001B5DB4 /* FeedCell */,
 				4A7E8919282033B4003066CB /* TabBar */,
 				4A7E8937282033F4003066CB /* Completion */,
@@ -132,12 +148,14 @@
 			path = FeedCell;
 			sourceTree = "<group>";
 		};
-		4A75D2B228205334001B5DB4 /* HomeDataModels */ = {
+		4A75D2B228205334001B5DB4 /* StoryCell */ = {
 			isa = PBXGroup;
 			children = (
-				4AA2A6C928210A2E00AE2161 /* FeedDataModel.swift */,
+				4AAE497A282190B20064556D /* StoryCollectionViewCell.swift */,
+				4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */,
+				4AAE497E282193300064556D /* StoryDataModel.swift */,
 			);
-			path = HomeDataModels;
+			path = StoryCell;
 			sourceTree = "<group>";
 		};
 		4A7E8919282033B4003066CB /* TabBar */ = {
@@ -159,6 +177,7 @@
 			children = (
 				4A7E891B282033B4003066CB /* Home.storyboard */,
 				4A7E891C282033B4003066CB /* HomeViewController.swift */,
+				4A7F2F9528215D59000984A9 /* FeedDataModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -236,6 +255,24 @@
 			path = "../../../../../../Downloads/HwangChanMi-main/instagramLogin/instagramLogin/Welcome";
 			sourceTree = "<group>";
 		};
+		4AB714E828227BF200D0AEF1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4AD2013928216715005BE378 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4AD2013A28216757005BE378 /* Image.swift */,
+				4AD2013C28216782005BE378 /* Const.swift */,
+				4AD2013E2821686E005BE378 /* Icon.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A476B4D27FB319300E653CB /* LaunchScreen.storyboard in Resources */,
+				4AAE497D282190B20064556D /* StoryCollectionViewCell.xib in Resources */,
 				4A7E8935282033B4003066CB /* TabBar.storyboard in Resources */,
 				4A7E893B282033F4003066CB /* Completion.storyboard in Resources */,
 				4A7E892D282033B4003066CB /* Shop.storyboard in Resources */,
@@ -318,9 +356,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */,
 				4A476B4527FB319300E653CB /* ViewController.swift in Sources */,
+				4AD2013D28216782005BE378 /* Const.swift in Sources */,
+				4AD2013B28216757005BE378 /* Image.swift in Sources */,
 				4A7E8936282033B4003066CB /* TabBarController.swift in Sources */,
 				4A7E893A282033F4003066CB /* CompletionViewController.swift in Sources */,
+				4A7F2F9628215D59000984A9 /* FeedDataModel.swift in Sources */,
 				4A7E8931282033B4003066CB /* SearchViewController.swift in Sources */,
 				4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */,
 				4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */,
@@ -331,8 +373,10 @@
 				4A7E8934282033B4003066CB /* ProfileViewController.swift in Sources */,
 				4A7E8930282033B4003066CB /* ReelsViewController.swift in Sources */,
 				4A7E893F2820340A003066CB /* PasswordViewController.swift in Sources */,
-				4AA2A6CA28210A2E00AE2161 /* FeedDataModel.swift in Sources */,
+				4AAE497F282193300064556D /* StoryDataModel.swift in Sources */,
 				4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */,
+				4AB714EA28227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift in Sources */,
+				4AD2013F2821686E005BE378 /* Icon.swift in Sources */,
 				4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
