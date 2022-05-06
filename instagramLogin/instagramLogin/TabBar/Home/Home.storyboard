@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="StH-hN-BJM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -9,20 +9,20 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="2IV-FT-TOQ">
+        <scene sceneID="eBu-tw-Scp">
             <objects>
-                <navigationController id="StH-hN-BJM" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cku-bh-75V">
+                <navigationController id="dja-B2-mlm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rmu-KY-vQ7">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6py-MJ-QbZ" kind="relationship" relationship="rootViewController" id="HVQ-Bh-wN9"/>
+                        <segue destination="6py-MJ-QbZ" kind="relationship" relationship="rootViewController" id="Ka6-j7-xtz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7c6-Nc-YJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whJ-MK-LSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-500" y="-107"/>
+            <point key="canvasLocation" x="-553" y="-107"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="IjK-K3-2UH">
@@ -46,7 +46,19 @@
                             <constraint firstItem="42n-n8-1dA" firstAttribute="top" secondItem="85v-DY-Ugl" secondAttribute="top" id="x1Q-Wl-tIv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CpD-bx-XS7"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="rAN-5L-qSa"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="CpD-bx-XS7">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="fen-F5-grO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JWy-JY-xxJ">
+                                <rect key="frame" x="16" y="1.6666666666666679" width="120" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="logo_instagram_small"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="feedTableView" destination="42n-n8-1dA" id="W3z-Xp-UdS"/>
@@ -58,6 +70,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icn_home" width="24" height="24"/>
+        <image name="icn_home_selected" width="24" height="24"/>
+        <image name="logo_instagram_small" width="96" height="27"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
