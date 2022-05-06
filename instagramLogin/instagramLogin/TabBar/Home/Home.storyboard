@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="StH-hN-BJM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,7 +13,7 @@
             <objects>
                 <navigationController id="StH-hN-BJM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cku-bh-75V">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -27,62 +28,38 @@
         <scene sceneID="IjK-K3-2UH">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="6py-MJ-QbZ" customClass="HomeViewController" customModule="instagramLogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Home" id="eO9-Ho-NwT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Home" id="eO9-Ho-NwT" customClass="Home">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="42n-n8-1dA">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="85v-DY-Ugl"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="85v-DY-Ugl" firstAttribute="trailing" secondItem="42n-n8-1dA" secondAttribute="trailing" id="0Qa-ll-9hO"/>
+                            <constraint firstItem="42n-n8-1dA" firstAttribute="leading" secondItem="85v-DY-Ugl" secondAttribute="leading" id="3Au-L8-6nR"/>
+                            <constraint firstItem="85v-DY-Ugl" firstAttribute="bottom" secondItem="42n-n8-1dA" secondAttribute="bottom" id="l9b-hq-ekm"/>
+                            <constraint firstItem="42n-n8-1dA" firstAttribute="top" secondItem="85v-DY-Ugl" secondAttribute="top" id="x1Q-Wl-tIv"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="79z-cs-Sm6"/>
-                    <navigationItem key="navigationItem" id="D7n-bW-pe6">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="uez-kO-tVt">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="QTd-rq-tYx">
-                                <rect key="frame" x="20" y="0.0" width="175" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="Instagram Black Logo"/>
-                            </button>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" style="plain" id="JIl-un-tT5">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XbQ-zu-cGa">
-                                    <rect key="frame" x="346" y="3" width="48" height="38"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="icn_share"/>
-                                </button>
-                            </barButtonItem>
-                            <barButtonItem style="plain" id="2rh-z0-DRQ">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="mGV-PT-GEF">
-                                    <rect key="frame" x="290" y="3" width="48" height="38"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="icn_unlike"/>
-                                </button>
-                            </barButtonItem>
-                            <barButtonItem style="plain" id="wGj-2B-ehi">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="QYf-6R-tOz">
-                                    <rect key="frame" x="234" y="3" width="48" height="38"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="icn_add"/>
-                                </button>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="CpD-bx-XS7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="feedTableView" destination="42n-n8-1dA" id="W3z-Xp-UdS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36Y-iE-qMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="-107"/>
+            <point key="canvasLocation" x="351.19999999999999" y="-107.14285714285715"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Instagram Black Logo" width="175" height="50"/>
-        <image name="icn_add" width="24" height="24"/>
-        <image name="icn_home" width="24" height="24"/>
-        <image name="icn_home_selected" width="24" height="24"/>
-        <image name="icn_share" width="24" height="24"/>
-        <image name="icn_unlike" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
