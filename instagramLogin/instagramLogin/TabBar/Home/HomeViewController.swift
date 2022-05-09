@@ -9,12 +9,14 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var addUIButton: UIButton!
+    @IBOutlet weak var likeUIButton: UIButton!
+    @IBOutlet weak var shareUIButton: UIButton!
+    
     @IBOutlet weak var feedTableView: UITableView!
-//    @IBOutlet weak var storyCollectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationUI()
         
         let nib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
         feedTableView.register(nib, forCellReuseIdentifier: FeedTableViewCell.identifier)
@@ -25,22 +27,15 @@ class HomeViewController: UIViewController {
         
         feedTableView.delegate = self
         feedTableView.dataSource = self
-        
-//        storyCollectionView.dataSource = self
     }
     
+    @IBAction func addBtnDidTap(_ sender: Any) {
+    }
+    @IBAction func likeBtnDidTap(_ sender: Any) {
+    }
+    @IBAction func shareBtnDidTap(_ sender: Any) {
+    }
     
-    private func setNavigationUI() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logo_instagram_small"), style: .plain, target: self, action: nil)
-            let add = navigationItem.setRightButtonUI(self, imageName: UIImage(named: "icn_add"))
-            let unlike = navigationItem.setRightButtonUI(self, imageName: UIImage(named: "icn_unlike"))
-            let share = navigationItem.setRightButtonUI(self, imageName: UIImage(named: "icn_share"))
-
-            let spacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-            spacer.width = 16
-
-            navigationItem.rightBarButtonItems = [share, spacer, unlike, spacer, add]
-        }
 }
 
 extension HomeViewController: UITableViewDelegate {

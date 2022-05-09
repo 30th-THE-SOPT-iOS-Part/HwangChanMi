@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Clr-BT-ok4">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,70 +8,119 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="eBu-tw-Scp">
-            <objects>
-                <navigationController id="dja-B2-mlm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rmu-KY-vQ7">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="6py-MJ-QbZ" kind="relationship" relationship="rootViewController" id="Ka6-j7-xtz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="whJ-MK-LSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-553" y="-107"/>
-        </scene>
         <!--Home View Controller-->
-        <scene sceneID="IjK-K3-2UH">
+        <scene sceneID="F4l-OG-zt3">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="6py-MJ-QbZ" customClass="HomeViewController" customModule="instagramLogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Home" id="eO9-Ho-NwT" customClass="Home">
+                <viewController storyboardIdentifier="HomeViewController" id="Clr-BT-ok4" customClass="HomeViewController" customModule="instagramLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Nu-2g-xFL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="42n-n8-1dA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E2a-dr-2LN">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="641" id="Ezy-FY-Xai"/>
+                                </constraints>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsJ-dG-uPr">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_instagram_small" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-Y6-NE3">
+                                        <rect key="frame" x="14" y="9" width="96" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="96" id="dSX-E1-ihw"/>
+                                            <constraint firstAttribute="height" constant="27" id="oL0-Rr-gEJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="omL-Um-GJr">
+                                        <rect key="frame" x="257" y="11" width="104" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sh-PQ-PQ7">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="Kvd-Uj-r7I"/>
+                                                    <constraint firstAttribute="height" constant="24" id="gqu-pv-lzu"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="icn_add"/>
+                                                <connections>
+                                                    <action selector="addBtnDidTap:" destination="Clr-BT-ok4" eventType="touchUpInside" id="DXI-Jr-e63"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7st-a2-cf4">
+                                                <rect key="frame" x="40" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="g0P-zx-6hy"/>
+                                                    <constraint firstAttribute="width" constant="24" id="hJE-9Q-e8K"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="icn_unlike"/>
+                                                <connections>
+                                                    <action selector="likeBtnDidTap:" destination="Clr-BT-ok4" eventType="touchUpInside" id="Oda-FG-BVD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceW-EO-lK2">
+                                                <rect key="frame" x="80" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="oQq-PR-0KU"/>
+                                                    <constraint firstAttribute="height" constant="24" id="y9E-xa-SNw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="icn_share"/>
+                                                <connections>
+                                                    <action selector="shareBtnDidTap:" destination="Clr-BT-ok4" eventType="touchUpInside" id="Ezr-9j-I09"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="omL-Um-GJr" secondAttribute="trailing" constant="14" id="154-Td-FeI"/>
+                                    <constraint firstItem="fe0-Y6-NE3" firstAttribute="top" secondItem="bsJ-dG-uPr" secondAttribute="top" constant="9" id="EMa-kp-v33"/>
+                                    <constraint firstItem="fe0-Y6-NE3" firstAttribute="leading" secondItem="bsJ-dG-uPr" secondAttribute="leading" constant="14" id="REJ-2U-Sqz"/>
+                                    <constraint firstAttribute="height" constant="44" id="Uen-Gl-yJq"/>
+                                    <constraint firstItem="omL-Um-GJr" firstAttribute="top" secondItem="bsJ-dG-uPr" secondAttribute="top" constant="11" id="c9h-Pf-PoT"/>
+                                    <constraint firstAttribute="bottom" secondItem="fe0-Y6-NE3" secondAttribute="bottom" constant="8" id="dSs-WQ-Lof"/>
+                                    <constraint firstAttribute="width" constant="375" id="eYB-yg-alu"/>
+                                    <constraint firstAttribute="bottom" secondItem="omL-Um-GJr" secondAttribute="bottom" constant="9" id="izb-cn-4cS"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="85v-DY-Ugl"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cq4-49-f3N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="85v-DY-Ugl" firstAttribute="trailing" secondItem="42n-n8-1dA" secondAttribute="trailing" id="0Qa-ll-9hO"/>
-                            <constraint firstItem="42n-n8-1dA" firstAttribute="leading" secondItem="85v-DY-Ugl" secondAttribute="leading" id="3Au-L8-6nR"/>
-                            <constraint firstItem="85v-DY-Ugl" firstAttribute="bottom" secondItem="42n-n8-1dA" secondAttribute="bottom" id="l9b-hq-ekm"/>
-                            <constraint firstItem="42n-n8-1dA" firstAttribute="top" secondItem="85v-DY-Ugl" secondAttribute="top" id="x1Q-Wl-tIv"/>
+                            <constraint firstItem="bsJ-dG-uPr" firstAttribute="top" secondItem="cq4-49-f3N" secondAttribute="top" id="01h-rC-FGE"/>
+                            <constraint firstItem="bsJ-dG-uPr" firstAttribute="leading" secondItem="cq4-49-f3N" secondAttribute="leading" id="6Zl-cs-XDk"/>
+                            <constraint firstItem="E2a-dr-2LN" firstAttribute="top" secondItem="bsJ-dG-uPr" secondAttribute="bottom" id="8uZ-Ng-e4l"/>
+                            <constraint firstItem="E2a-dr-2LN" firstAttribute="bottom" secondItem="cq4-49-f3N" secondAttribute="bottom" id="aWN-xp-wdl"/>
+                            <constraint firstItem="cq4-49-f3N" firstAttribute="trailing" secondItem="bsJ-dG-uPr" secondAttribute="trailing" id="l4H-UA-Uhx"/>
+                            <constraint firstItem="E2a-dr-2LN" firstAttribute="trailing" secondItem="cq4-49-f3N" secondAttribute="trailing" id="qx2-6S-F3b"/>
+                            <constraint firstItem="E2a-dr-2LN" firstAttribute="leading" secondItem="cq4-49-f3N" secondAttribute="leading" id="zGU-hr-N4b"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="rAN-5L-qSa"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="CpD-bx-XS7">
-                        <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="fen-F5-grO">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JWy-JY-xxJ">
-                                <rect key="frame" x="16" y="1.6666666666666679" width="120" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="logo_instagram_small"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="" image="icn_home" selectedImage="icn_home_selected" id="2Bb-5t-phh"/>
+                    <navigationItem key="navigationItem" id="Ka6-kZ-cFX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="feedTableView" destination="42n-n8-1dA" id="W3z-Xp-UdS"/>
+                        <outlet property="addUIButton" destination="4Sh-PQ-PQ7" id="tFp-fv-Ar8"/>
+                        <outlet property="feedTableView" destination="E2a-dr-2LN" id="zZL-Pn-7Zw"/>
+                        <outlet property="likeUIButton" destination="7st-a2-cf4" id="ay6-2q-WTY"/>
+                        <outlet property="shareUIButton" destination="ceW-EO-lK2" id="YBg-B9-NCR"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="36Y-iE-qMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rnu-lN-IpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351.19999999999999" y="-107.14285714285715"/>
+            <point key="canvasLocation" x="360.80000000000001" y="-107.14285714285715"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icn_add" width="24" height="24"/>
         <image name="icn_home" width="24" height="24"/>
         <image name="icn_home_selected" width="24" height="24"/>
+        <image name="icn_share" width="24" height="24"/>
+        <image name="icn_unlike" width="24" height="24"/>
         <image name="logo_instagram_small" width="96" height="27"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
