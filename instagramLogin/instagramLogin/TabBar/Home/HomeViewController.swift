@@ -27,6 +27,9 @@ class HomeViewController: UIViewController {
         
         feedTableView.delegate = self
         feedTableView.dataSource = self
+        
+        feedTableView.rowHeight = UITableView.automaticDimension
+        feedTableView.estimatedRowHeight = 488
     }
     
     @IBAction func addBtnDidTap(_ sender: Any) {
@@ -39,17 +42,17 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        switch indexPath.section {
-        case 0:
-            return 72
-        case 1:
-            return 488
-        default:
-            return 0
-        }
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//
+//        switch indexPath.section {
+//        case 0:
+//            return 72
+//        case 1:
+//            return 488
+//        default:
+//            return 0
+//        }
+//    }
 }
 
 extension HomeViewController: UITableViewDataSource {
