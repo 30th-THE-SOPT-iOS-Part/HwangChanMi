@@ -26,11 +26,15 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var FeedLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
     
+//    @IBOutlet weak var captionLabelWidth: NSLayoutConstraint!
+    
     var delegate: UITableViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setBtn()
+        
+//        captionLabelWidth.constant = UIScreen.main.bounds.width - (captionWriterNameLabel.intrinsicContentSize.width + 12 + 4 + 12)
     }
     
     private func setBtn() {
@@ -51,6 +55,7 @@ class FeedTableViewCell: UITableViewCell {
         nameLabel.text = feedData.profileName
         FeedLabel.text = feedData.feedSummary
         commentLabel.text = feedData.commentInfo
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
