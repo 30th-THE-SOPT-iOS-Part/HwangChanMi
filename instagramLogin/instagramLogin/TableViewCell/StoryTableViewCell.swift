@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class StoryTableViewCell: UITableViewCell, UICollectionViewDataSource {
     
     static let identifier = "StoryTableViewCell"
 
