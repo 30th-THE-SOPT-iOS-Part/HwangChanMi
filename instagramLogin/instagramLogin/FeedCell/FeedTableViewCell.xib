@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCell" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="instagramLogin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" userLabel="View">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6EJ-q6-gdk" userLabel="프로필 이미지">
+                        <rect key="frame" x="6" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="4bk-O6-L4N"/>
+                            <constraint firstAttribute="height" constant="24" id="nRR-eD-zvq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqx-r1-KQw" userLabel="아이디 라벨">
+                        <rect key="frame" x="36" y="15" width="31.5" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="dj9-Z9-Ghr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jx-Hz-kjV" userLabel="더보기 버튼">
+                        <rect key="frame" x="341" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="U5y-y1-Gdu"/>
+                            <constraint firstAttribute="width" constant="24" id="zE9-km-qWL"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="icn_more"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yno-VA-AJW" userLabel="피드 이미지">
+                        <rect key="frame" x="0.0" y="46" width="375" height="340"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="340" id="D7k-FU-OyB"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EIQ-7Z-Xcr">
+                        <rect key="frame" x="10" y="394" width="92" height="24"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSl-4l-mJz" userLabel="좋아요 버튼">
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="V23-pD-BnV"/>
+                                    <constraint firstAttribute="width" constant="24" id="u0G-Yz-nVF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_unlike" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czi-eU-0O3" userLabel="댓글 버튼">
+                                <rect key="frame" x="34" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="2Km-mK-KnA"/>
+                                    <constraint firstAttribute="width" constant="24" id="WJq-Xc-hTE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_comment"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbb-fj-WMA" userLabel="공유 버튼">
+                                <rect key="frame" x="68" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="4lf-uX-2iM"/>
+                                    <constraint firstAttribute="width" constant="24" id="zUu-jc-FHd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icn_share"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 330개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exI-XC-p09" userLabel="좋아요 라벨">
+                        <rect key="frame" x="12" y="428" width="58" height="12"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글 24개 모두 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2o-HA-sem" userLabel="댓글 개수">
+                        <rect key="frame" x="12" y="464.5" width="82" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="avatar2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e0-b0-BHx" userLabel="아이디 라벨">
+                        <rect key="frame" x="12" y="446" width="43.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="큰 목표를 이루고 싶으면 허락을 구하지 마라" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtY-Cs-JLL">
+                        <rect key="frame" x="57.5" y="447.5" width="173" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-Ci-bbV">
+                        <rect key="frame" x="341" y="394" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="khr-OK-wWu"/>
+                            <constraint firstAttribute="height" constant="24" id="oct-nE-Yg8"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="icn_bookmark" title=""/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yno-VA-AJW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Ai-Vk-yFg"/>
+                    <constraint firstItem="exI-XC-p09" firstAttribute="top" secondItem="EIQ-7Z-Xcr" secondAttribute="bottom" constant="10" id="1W8-i9-CPM"/>
+                    <constraint firstItem="h2o-HA-sem" firstAttribute="top" secondItem="7e0-b0-BHx" secondAttribute="bottom" constant="4" id="1aH-00-Cry"/>
+                    <constraint firstItem="VfC-Ci-bbV" firstAttribute="top" secondItem="Yno-VA-AJW" secondAttribute="bottom" constant="8" id="3Et-7W-wUv"/>
+                    <constraint firstItem="exI-XC-p09" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="5Bb-Rk-o5v"/>
+                    <constraint firstItem="7e0-b0-BHx" firstAttribute="top" secondItem="exI-XC-p09" secondAttribute="bottom" constant="6" id="Ixx-92-Mcw"/>
+                    <constraint firstItem="Yno-VA-AJW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="46" id="JsF-wZ-pOn"/>
+                    <constraint firstAttribute="bottom" secondItem="Yno-VA-AJW" secondAttribute="bottom" constant="113" id="MPr-U5-nJN"/>
+                    <constraint firstItem="Bqx-r1-KQw" firstAttribute="leading" secondItem="6EJ-q6-gdk" secondAttribute="trailing" constant="6" id="Mxe-nV-G3u"/>
+                    <constraint firstItem="7e0-b0-BHx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Tfd-Zy-8fu"/>
+                    <constraint firstItem="mtY-Cs-JLL" firstAttribute="leading" secondItem="7e0-b0-BHx" secondAttribute="trailing" constant="2" id="TvN-yv-SJl"/>
+                    <constraint firstItem="h2o-HA-sem" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="X6e-ob-jHE"/>
+                    <constraint firstAttribute="trailing" secondItem="5jx-Hz-kjV" secondAttribute="trailing" constant="10" id="aEy-l1-eEo"/>
+                    <constraint firstItem="mtY-Cs-JLL" firstAttribute="centerY" secondItem="7e0-b0-BHx" secondAttribute="centerY" id="bE6-nK-0in"/>
+                    <constraint firstItem="Yno-VA-AJW" firstAttribute="top" secondItem="5jx-Hz-kjV" secondAttribute="bottom" constant="12" id="cMi-4N-4pX"/>
+                    <constraint firstItem="6EJ-q6-gdk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="eK9-Zk-Fnt"/>
+                    <constraint firstAttribute="trailing" secondItem="VfC-Ci-bbV" secondAttribute="trailing" constant="10" id="hU5-lD-g7Y"/>
+                    <constraint firstAttribute="trailing" secondItem="Yno-VA-AJW" secondAttribute="trailing" id="hpF-JQ-vFg"/>
+                    <constraint firstItem="Yno-VA-AJW" firstAttribute="top" secondItem="Bqx-r1-KQw" secondAttribute="bottom" constant="17" id="l6h-QX-eSr"/>
+                    <constraint firstItem="EIQ-7Z-Xcr" firstAttribute="top" secondItem="Yno-VA-AJW" secondAttribute="bottom" constant="8" id="pMx-3B-xMo"/>
+                    <constraint firstItem="EIQ-7Z-Xcr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pw3-Wh-yMy"/>
+                    <constraint firstItem="Yno-VA-AJW" firstAttribute="top" secondItem="6EJ-q6-gdk" secondAttribute="bottom" constant="12" id="zyI-HD-hwY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="FeedLabel" destination="mtY-Cs-JLL" id="2yw-x0-VUN"/>
+                <outlet property="commentBtn" destination="czi-eU-0O3" id="sYd-BZ-XFE"/>
+                <outlet property="commentLabel" destination="h2o-HA-sem" id="QIC-yd-Tr6"/>
+                <outlet property="feedImg" destination="Yno-VA-AJW" id="RiL-86-b6p"/>
+                <outlet property="likeBtn" destination="XSl-4l-mJz" id="gzY-y9-EyM"/>
+                <outlet property="likeLabel" destination="exI-XC-p09" id="smx-kR-WXC"/>
+                <outlet property="nameLabel" destination="7e0-b0-BHx" id="BhB-yT-ONI"/>
+                <outlet property="profileImg" destination="6EJ-q6-gdk" id="IJf-WY-hf9"/>
+                <outlet property="profileName" destination="Bqx-r1-KQw" id="V5F-tZ-qb7"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="92.410714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_bookmark" width="24" height="24"/>
+        <image name="icn_comment" width="24" height="24"/>
+        <image name="icn_more" width="24" height="24"/>
+        <image name="icn_share" width="24" height="24"/>
+        <image name="icn_unlike" width="24" height="24"/>
+    </resources>
+</document>

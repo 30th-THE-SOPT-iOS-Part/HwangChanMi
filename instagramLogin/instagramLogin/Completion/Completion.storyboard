@@ -58,6 +58,9 @@
                                 <rect key="frame" x="124.5" y="549.5" width="165" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기"/>
+                                <connections>
+                                    <action selector="otherAccountButton:" destination="woQ-mA-zmg" eventType="touchUpInside" id="7Gg-6R-vxH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Up-ZM-HYt"/>

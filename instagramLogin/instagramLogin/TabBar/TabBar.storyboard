@@ -6,16 +6,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="mqk-bc-0mv">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" id="xkz-DT-1Go" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aw6-yp-QNs"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FrW-pm-bUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="444" y="492"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ngg-9C-4qh">
             <objects>
@@ -26,13 +16,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="xkz-DT-1Go" kind="relationship" relationship="viewControllers" id="CLr-iF-qJF"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DV9-im-g2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.86956521739137" y="79.6875"/>
+            <point key="canvasLocation" x="990" y="58"/>
         </scene>
     </scenes>
 </document>
