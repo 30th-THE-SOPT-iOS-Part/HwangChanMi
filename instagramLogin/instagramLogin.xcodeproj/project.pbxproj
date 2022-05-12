@@ -13,6 +13,7 @@
 		4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4927FB319300E653CB /* Assets.xcassets */; };
 		4A476B4D27FB319300E653CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */; };
 		4A753942282D088800726501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A753941282D088800726501 /* Main.storyboard */; };
+		4A753948282D136400726501 /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A753947282D136400726501 /* SignUpDataModel.swift */; };
 		4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */; };
 		4A75D2B0282052E5001B5DB4 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */; };
 		4A7C9BA7282C2ED900F8B251 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */; };
@@ -62,6 +63,7 @@
 		4A476B4C27FB319300E653CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A476B4E27FB319300E653CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A753941282D088800726501 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4A753947282D136400726501 /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
 		4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				4A7C9BAC282CD42000F8B251 /* UserService.swift */,
 				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
 				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
+				4A753947282D136400726501 /* SignUpDataModel.swift */,
 			);
 			path = instagramLogin;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				4A7C9BAB282CD23600F8B251 /* LoginDataModel.swift in Sources */,
 				4A7C9BA9282C32B100F8B251 /* NetworkResult.swift in Sources */,
 				4AD2013F2821686E005BE378 /* Icon.swift in Sources */,
+				4A753948282D136400726501 /* SignUpDataModel.swift in Sources */,
 				4A9459932823B8DA00056202 /* StoryTableViewCell.swift in Sources */,
 				4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */,
 			);
