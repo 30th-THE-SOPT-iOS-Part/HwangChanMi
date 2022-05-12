@@ -10,9 +10,9 @@
 		4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476B4027FB319300E653CB /* AppDelegate.swift */; };
 		4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476B4227FB319300E653CB /* SceneDelegate.swift */; };
 		4A476B4527FB319300E653CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476B4427FB319300E653CB /* ViewController.swift */; };
-		4A476B4827FB319300E653CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4627FB319300E653CB /* Main.storyboard */; };
 		4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4927FB319300E653CB /* Assets.xcassets */; };
 		4A476B4D27FB319300E653CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */; };
+		4A753942282D088800726501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A753941282D088800726501 /* Main.storyboard */; };
 		4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */; };
 		4A75D2B0282052E5001B5DB4 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */; };
 		4A7C9BA7282C2ED900F8B251 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */; };
@@ -58,10 +58,10 @@
 		4A476B4027FB319300E653CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A476B4227FB319300E653CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A476B4427FB319300E653CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A476B4727FB319300E653CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A476B4927FB319300E653CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A476B4C27FB319300E653CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A476B4E27FB319300E653CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A753941282D088800726501 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -148,15 +148,15 @@
 				4A7E894628203473003066CB /* Welcome */,
 				4A476B4927FB319300E653CB /* Assets.xcassets */,
 				4A476B4027FB319300E653CB /* AppDelegate.swift */,
+				4A7E890C282032CD003066CB /* UITexField++.swift */,
 				4A476B4427FB319300E653CB /* ViewController.swift */,
-				4A476B4627FB319300E653CB /* Main.storyboard */,
 				4A476B4227FB319300E653CB /* SceneDelegate.swift */,
 				4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */,
+				4A753941282D088800726501 /* Main.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
 				4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */,
 				4A7C9BAC282CD42000F8B251 /* UserService.swift */,
 				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
-				4A7E890C282032CD003066CB /* UITexField++.swift */,
 				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
 			);
 			path = instagramLogin;
@@ -393,8 +393,8 @@
 				4A7E894D28203483003066CB /* welcom.storyboard in Resources */,
 				4A7E89442820341A003066CB /* Username.storyboard in Resources */,
 				4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */,
-				4A476B4827FB319300E653CB /* Main.storyboard in Resources */,
 				4A9459942823B8DA00056202 /* StoryTableViewCell.xib in Resources */,
+				4A753942282D088800726501 /* Main.storyboard in Resources */,
 				4A7E8932282033B4003066CB /* Search.storyboard in Resources */,
 				4A7E892F282033B4003066CB /* Reels.storyboard in Resources */,
 				4A7E892B282033B4003066CB /* Home.storyboard in Resources */,
@@ -484,14 +484,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A476B4627FB319300E653CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A476B4727FB319300E653CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
