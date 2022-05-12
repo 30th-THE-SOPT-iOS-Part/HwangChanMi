@@ -16,6 +16,9 @@
 		4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */; };
 		4A75D2B0282052E5001B5DB4 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */; };
 		4A7C9BA7282C2ED900F8B251 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */; };
+		4A7C9BA9282C32B100F8B251 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */; };
+		4A7C9BAB282CD23600F8B251 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */; };
+		4A7C9BAD282CD42000F8B251 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C9BAC282CD42000F8B251 /* UserService.swift */; };
 		4A7E890D282032CD003066CB /* UITexField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E890C282032CD003066CB /* UITexField++.swift */; };
 		4A7E892B282033B4003066CB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E891B282033B4003066CB /* Home.storyboard */; };
 		4A7E892C282033B4003066CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E891C282033B4003066CB /* HomeViewController.swift */; };
@@ -62,6 +65,9 @@
 		4A75D2AD282052E5001B5DB4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		4A75D2AE282052E5001B5DB4 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		4A7C9BAC282CD42000F8B251 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		4A7E890C282032CD003066CB /* UITexField++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITexField++.swift"; sourceTree = "<group>"; };
 		4A7E891B282033B4003066CB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4A7E891C282033B4003066CB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +154,10 @@
 				4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
 				4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */,
+				4A7C9BAC282CD42000F8B251 /* UserService.swift */,
+				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
 				4A7E890C282032CD003066CB /* UITexField++.swift */,
+				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
 			);
 			path = instagramLogin;
 			sourceTree = "<group>";
@@ -444,6 +453,7 @@
 			files = (
 				4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */,
 				4A476B4527FB319300E653CB /* ViewController.swift in Sources */,
+				4A7C9BAD282CD42000F8B251 /* UserService.swift in Sources */,
 				4AD2013D28216782005BE378 /* Const.swift in Sources */,
 				4AD2013B28216757005BE378 /* Image.swift in Sources */,
 				4A7E8936282033B4003066CB /* TabBarController.swift in Sources */,
@@ -463,6 +473,8 @@
 				4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */,
 				4AB714EA28227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift in Sources */,
 				4A7C9BA7282C2ED900F8B251 /* APIConstants.swift in Sources */,
+				4A7C9BAB282CD23600F8B251 /* LoginDataModel.swift in Sources */,
+				4A7C9BA9282C32B100F8B251 /* NetworkResult.swift in Sources */,
 				4AD2013F2821686E005BE378 /* Icon.swift in Sources */,
 				4A9459932823B8DA00056202 /* StoryTableViewCell.swift in Sources */,
 				4A476B4327FB319300E653CB /* SceneDelegate.swift in Sources */,
