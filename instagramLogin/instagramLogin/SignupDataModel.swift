@@ -9,13 +9,11 @@ import Foundation
 
 struct SignUpResponse: Codable {
     let status: Int
-    let success: Bool?
+    let success: Bool
     let message: String
     let data: SignUpData?
 }
 
 struct SignUpData: Codable {
-    let name: String
-    let email: String
-    let password: String
+    let id: Int
 }
