@@ -48,6 +48,7 @@
 		4AAE497D282190B20064556D /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */; };
 		4AAE497F282193300064556D /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE497E282193300064556D /* StoryDataModel.swift */; };
 		4AB714EA28227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */; };
+		4ACBB453282E77E300649F1F /* UIViewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACBB452282E77E300649F1F /* UIViewController++.swift */; };
 		4AD2013B28216757005BE378 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013A28216757005BE378 /* Image.swift */; };
 		4AD2013D28216782005BE378 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013C28216782005BE378 /* Const.swift */; };
 		4AD2013F2821686E005BE378 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013E2821686E005BE378 /* Icon.swift */; };
@@ -98,6 +99,7 @@
 		4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		4AAE497E282193300064556D /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
 		4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIHomeNavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		4ACBB452282E77E300649F1F /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
 		4AD2013A28216757005BE378 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4AD2013C28216782005BE378 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		4AD2013E2821686E005BE378 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
@@ -268,8 +270,8 @@
 		4A7E89412820341A003066CB /* Username */ = {
 			isa = PBXGroup;
 			children = (
-				4A7E89422820341A003066CB /* Username.storyboard */,
 				4A7E89432820341A003066CB /* UsernameViewController.swift */,
+				4A7E89422820341A003066CB /* Username.storyboard */,
 			);
 			path = Username;
 			sourceTree = "<group>";
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */,
+				4ACBB452282E77E300649F1F /* UIViewController++.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACBB453282E77E300649F1F /* UIViewController++.swift in Sources */,
 				4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */,
 				4A476B4527FB319300E653CB /* ViewController.swift in Sources */,
 				4A7C9BAD282CD42000F8B251 /* UserService.swift in Sources */,
