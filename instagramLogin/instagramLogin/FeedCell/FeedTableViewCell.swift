@@ -30,6 +30,8 @@ class FeedTableViewCell: UITableViewCell {
     
     var delegate: UITableViewDelegate?
     
+    var indexPath: Int?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setBtn()
@@ -47,10 +49,12 @@ class FeedTableViewCell: UITableViewCell {
 //        delegate?.likeBtnDidTapEvent(likeLabel.text ?? "")
 //    }
     
-    func setData(_ feedData: FeedDataModel) {
+    func setFeedData(_ feedData: FeedDataModel) {
         profileImg.image = feedData.profileImage
         profileName.text = feedData.profileName
-        feedImg.image = feedData.feedImage
+//        feedImg.load(urlString: feedData.feedImage)
+//        feedImg.image = feedData.feedImage
+        feedImg.load(imgURL: feedData.feedImage)
         likeLabel.text = feedData.likeInfo
         nameLabel.text = feedData.profileName
         FeedLabel.text = feedData.feedSummary

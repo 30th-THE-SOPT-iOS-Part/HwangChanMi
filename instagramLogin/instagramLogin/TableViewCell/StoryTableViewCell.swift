@@ -35,7 +35,7 @@ class StoryTableViewCell: UITableViewCell, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = StoryCollectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.identifier, for: indexPath) as? StoryCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.setData(StoryDataModel.sampleData[indexPath.row])
+        cell.setStoryData(StoryDataModel.sampleData[indexPath.row])
         
         return cell
     }

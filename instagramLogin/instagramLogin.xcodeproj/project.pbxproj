@@ -44,6 +44,10 @@
 		4A7F2F9628215D59000984A9 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F2F9528215D59000984A9 /* FeedDataModel.swift */; };
 		4A9459932823B8DA00056202 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9459912823B8DA00056202 /* StoryTableViewCell.swift */; };
 		4A9459942823B8DA00056202 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9459922823B8DA00056202 /* StoryTableViewCell.xib */; };
+		4A971A5D282F81C600D658F6 /* ImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A971A5C282F81C600D658F6 /* ImageDataModel.swift */; };
+		4AA3F41F282FBD8C0050597F /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3F41E282FBD8C0050597F /* ImageService.swift */; };
+		4AA3F421282FCC780050597F /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3F420282FCC780050597F /* NetworkHelper.swift */; };
+		4AA99971283024CC009AA2C8 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA99970283024CC009AA2C8 /* UIImageView+.swift */; };
 		4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE497A282190B20064556D /* StoryCollectionViewCell.swift */; };
 		4AAE497D282190B20064556D /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */; };
 		4AAE497F282193300064556D /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE497E282193300064556D /* StoryDataModel.swift */; };
@@ -95,6 +99,10 @@
 		4A7F2F9528215D59000984A9 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 		4A9459912823B8DA00056202 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		4A9459922823B8DA00056202 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		4A971A5C282F81C600D658F6 /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
+		4AA3F41E282FBD8C0050597F /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		4AA3F420282FCC780050597F /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		4AA99970283024CC009AA2C8 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		4AAE497A282190B20064556D /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		4AAE497B282190B20064556D /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		4AAE497E282193300064556D /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
@@ -159,10 +167,13 @@
 				4A753941282D088800726501 /* Main.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
 				4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */,
-				4A7C9BAC282CD42000F8B251 /* UserService.swift */,
+				4AA99970283024CC009AA2C8 /* UIImageView+.swift */,
+				4AD8389B2831351600B80D8F /* Service */,
 				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
 				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
 				4A753947282D136400726501 /* SignUpDataModel.swift */,
+				4A971A5C282F81C600D658F6 /* ImageDataModel.swift */,
+				4AA3F420282FCC780050597F /* NetworkHelper.swift */,
 			);
 			path = instagramLogin;
 			sourceTree = "<group>";
@@ -312,6 +323,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		4AD8389B2831351600B80D8F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4AA3F41E282FBD8C0050597F /* ImageService.swift */,
+				4A7C9BAC282CD42000F8B251 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		6BDB7A3F5868FE76E93CFCAD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ACBB453282E77E300649F1F /* UIViewController++.swift in Sources */,
+				4A971A5D282F81C600D658F6 /* ImageDataModel.swift in Sources */,
 				4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */,
 				4A476B4527FB319300E653CB /* ViewController.swift in Sources */,
 				4A7C9BAD282CD42000F8B251 /* UserService.swift in Sources */,
@@ -468,17 +489,20 @@
 				4A7F2F9628215D59000984A9 /* FeedDataModel.swift in Sources */,
 				4A7E8931282033B4003066CB /* SearchViewController.swift in Sources */,
 				4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */,
+				4AA99971283024CC009AA2C8 /* UIImageView+.swift in Sources */,
 				4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */,
 				4A7E892E282033B4003066CB /* ShopViewController.swift in Sources */,
 				4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */,
 				4A7E890D282032CD003066CB /* UITexField++.swift in Sources */,
 				4A7E892C282033B4003066CB /* HomeViewController.swift in Sources */,
 				4A7E8934282033B4003066CB /* ProfileViewController.swift in Sources */,
+				4AA3F41F282FBD8C0050597F /* ImageService.swift in Sources */,
 				4A7E8930282033B4003066CB /* ReelsViewController.swift in Sources */,
 				4A7E893F2820340A003066CB /* PasswordViewController.swift in Sources */,
 				4AAE497F282193300064556D /* StoryDataModel.swift in Sources */,
 				4A476B4127FB319300E653CB /* AppDelegate.swift in Sources */,
 				4AB714EA28227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift in Sources */,
+				4AA3F421282FCC780050597F /* NetworkHelper.swift in Sources */,
 				4A7C9BA7282C2ED900F8B251 /* APIConstants.swift in Sources */,
 				4A7C9BAB282CD23600F8B251 /* LoginDataModel.swift in Sources */,
 				4A7C9BA9282C32B100F8B251 /* NetworkResult.swift in Sources */,
