@@ -167,7 +167,6 @@
 				4A753941282D088800726501 /* Main.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
 				4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */,
-				4AA99970283024CC009AA2C8 /* UIImageView+.swift */,
 				4AD8389B2831351600B80D8F /* Service */,
 				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
 				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
@@ -308,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */,
+				4AA99970283024CC009AA2C8 /* UIImageView+.swift */,
 				4ACBB452282E77E300649F1F /* UIViewController++.swift */,
 			);
 			path = Extension;
