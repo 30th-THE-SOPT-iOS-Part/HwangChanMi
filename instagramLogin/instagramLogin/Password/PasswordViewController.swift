@@ -37,9 +37,9 @@ class PasswordViewController: UIViewController {
         let completionVC = completionSB.instantiateViewController(withIdentifier: "CompletionViewController") as! CompletionViewController
     
         // 전달받은 데이터의 값이 있으면, 다음 VC 프로퍼티로 값을 넘겨 준다
-        if let nameData = nameData {
-            completionVC.nameData = nameData
-        }
+        completionVC.nameData = nameData
+        completionVC.passwordData = pwTextField.text
+        
         
         self.present(completionVC, animated: true, completion: nil)
     }

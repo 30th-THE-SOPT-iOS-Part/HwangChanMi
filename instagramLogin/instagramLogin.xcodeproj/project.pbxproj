@@ -149,30 +149,23 @@
 		4A476B3F27FB319300E653CB /* instagramLogin */ = {
 			isa = PBXGroup;
 			children = (
+				4AD8389F28313A8F00B80D8F /* Network */,
+				4AD8389E28313A1300B80D8F /* Insta */,
 				4AB714E828227BF200D0AEF1 /* Extension */,
 				4AD2013928216715005BE378 /* Constants */,
 				4A75D2B228205334001B5DB4 /* TableViewCell */,
 				4A75D2AA28204DF1001B5DB4 /* FeedCell */,
-				4A7E8919282033B4003066CB /* TabBar */,
 				4A7E8937282033F4003066CB /* Completion */,
 				4A7E893C2820340A003066CB /* Password */,
 				4A7E89412820341A003066CB /* Username */,
 				4A7E894628203473003066CB /* Welcome */,
 				4A476B4927FB319300E653CB /* Assets.xcassets */,
 				4A476B4027FB319300E653CB /* AppDelegate.swift */,
-				4A7E890C282032CD003066CB /* UITexField++.swift */,
 				4A476B4427FB319300E653CB /* ViewController.swift */,
 				4A476B4227FB319300E653CB /* SceneDelegate.swift */,
 				4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */,
 				4A753941282D088800726501 /* Main.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
-				4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */,
-				4AD8389B2831351600B80D8F /* Service */,
-				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
-				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
-				4A753947282D136400726501 /* SignUpDataModel.swift */,
-				4A971A5C282F81C600D658F6 /* ImageDataModel.swift */,
-				4AA3F420282FCC780050597F /* NetworkHelper.swift */,
 			);
 			path = instagramLogin;
 			sourceTree = "<group>";
@@ -306,8 +299,10 @@
 		4AB714E828227BF200D0AEF1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4A7E890C282032CD003066CB /* UITexField++.swift */,
 				4AB714E928227C1E00D0AEF1 /* UIHomeNavigationItem+Extension.swift */,
 				4AA99970283024CC009AA2C8 /* UIImageView+.swift */,
+				4AA3F420282FCC780050597F /* NetworkHelper.swift */,
 				4ACBB452282E77E300649F1F /* UIViewController++.swift */,
 			);
 			path = Extension;
@@ -330,6 +325,35 @@
 				4A7C9BAC282CD42000F8B251 /* UserService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4AD8389E28313A1300B80D8F /* Insta */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8919282033B4003066CB /* TabBar */,
+			);
+			path = Insta;
+			sourceTree = "<group>";
+		};
+		4AD8389F28313A8F00B80D8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A7C9BA8282C32B100F8B251 /* NetworkResult.swift */,
+				4A7C9BA6282C2ED900F8B251 /* APIConstants.swift */,
+				4AD8389B2831351600B80D8F /* Service */,
+				4AD838A028313A9F00B80D8F /* DataModel */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4AD838A028313A9F00B80D8F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A971A5C282F81C600D658F6 /* ImageDataModel.swift */,
+				4A7C9BAA282CD23600F8B251 /* LoginDataModel.swift */,
+				4A753947282D136400726501 /* SignUpDataModel.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		6BDB7A3F5868FE76E93CFCAD /* Pods */ = {
