@@ -18,7 +18,7 @@ class StoryCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func setData(_ storyData: StoryDataModel) {
+    func setStoryData(_ storyData: StoryDataModel) {
         profileImg.image = storyData.profileImage
     }
 }

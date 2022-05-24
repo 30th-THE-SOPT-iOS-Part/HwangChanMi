@@ -14,23 +14,48 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var shareUIButton: UIButton!
     
     @IBOutlet weak var feedTableView: UITableView!
+    
+    private var feedDataList = FeedDataModel.sampleData
+    
+//    private var feeds = [FeedDataModel]() {
+//        didset { tableView.reloadData() }
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
-        feedTableView.register(nib, forCellReuseIdentifier: FeedTableViewCell.identifier)
+//        let nib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
+//        feedTableView.register(nib, forCellReuseIdentifier: FeedTableViewCell.identifier)
+//
+//        let storyNib = UINib(nibName: StoryTableViewCell.identifier, bundle: nil)
+//        feedTableView.register(storyNib, forCellReuseIdentifier: StoryTableViewCell.identifier)
+//
+//        feedTableView.rowHeight = UITableView.automaticDimension
+//        feedTableView.estimatedRowHeight = 488
+        setDelegate()
+        configureTableView()
+        
+        getImage()
+    }
+    
+    // 코드 수정
+    func setDelegate() {
+        feedTableView.delegate = self
+        feedTableView.dataSource = self
+    }
+    
+    func configureTableView() {
+        let Feednib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
+        feedTableView.register(Feednib, forCellReuseIdentifier: FeedTableViewCell.identifier)
 
         let storyNib = UINib(nibName: StoryTableViewCell.identifier, bundle: nil)
         feedTableView.register(storyNib, forCellReuseIdentifier: StoryTableViewCell.identifier)
         
-        
-        feedTableView.delegate = self
-        feedTableView.dataSource = self
-        
         feedTableView.rowHeight = UITableView.automaticDimension
         feedTableView.estimatedRowHeight = 488
     }
+    
+    
     
     @IBAction func addBtnDidTap(_ sender: Any) {
     }
@@ -87,7 +112,7 @@ extension HomeViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as?
                     FeedTableViewCell else { return UITableViewCell() }
             
-            cell.setData(FeedDataModel.sampleData[indexPath.row])
+            cell.setFeedData(FeedDataModel.sampleData[indexPath.row])
             cell.delegate = self
             
             return cell
@@ -109,3 +134,21 @@ extension HomeViewController: UITableViewDataSource {
 //        self.present(alert, animated: true, completion: nil)
 //    }
 //}
+
+extension HomeViewController {
+    func getImage() {
+        ImageService.shared.getImage { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? [ImageResponse] else { return }
+                for i in 0..<FeedDataModel.sampleData.count {
+                    FeedDataModel.sampleData[i].feedImage = data[i].download_url
+                        }
+                self.feedTableView.reloadData()
+            default:
+                print("실패~")
+            return
+            }
+        }
+    }
+}
