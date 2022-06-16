@@ -22,7 +22,7 @@ class CompletionViewController: UIViewController {
     private func setNameData() {
         if let nameData = nameData {
             // 전닯받은 데이터 + 문장을 합쳐서 문자열을 출력한다
-            dataLabel.text = nameData + "님, instagram에 오신 것을 환영합니다."
+            dataLabel.text = "\(nameData)님, instagram에 오신 것을 환영합니다."
             dataLabel.sizeToFit()
         }
     }
@@ -36,7 +36,7 @@ class CompletionViewController: UIViewController {
 //
 //        tabbarCV.modalPresentationStyle = UIModalPresentationStyle.fullScreen
 //        present(tabbarCV, animated: true, completion: nil)
-        
+//
 //        guard let welcomeVC = self.presentingViewController as? UINavigationController else { return }
 //
 //        self.dismiss(animated: true) {
@@ -79,6 +79,8 @@ extension CompletionViewController {
                         self.dismiss(animated: true) {
                             welcomeVC.popToRootViewController(animated: true)
                         
+                        print("아님 여기?")
+                        
                         // 이게 왜 안 되지...
                         // self.navigationController?.popToRootViewController(animated: true)
                     }
@@ -86,6 +88,7 @@ extension CompletionViewController {
             }
             default:
                 self.alert(title: "회원가입 실패", message: nil, handler: {_ in})
+                print("혹시?")
                 }
             }
         }

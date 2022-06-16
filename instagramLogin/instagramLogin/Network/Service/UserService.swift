@@ -97,6 +97,7 @@ class UserService {
                 // 실패시에는 바로 networkFail이라는 신호를 알립니다.
             case .failure:
                 completion(.networkFail)
+                print("여기냐")
             }
             
         }

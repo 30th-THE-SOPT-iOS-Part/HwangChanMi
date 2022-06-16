@@ -39,8 +39,6 @@
 		4A7E89402820340A003066CB /* Password.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E893E2820340A003066CB /* Password.storyboard */; };
 		4A7E89442820341A003066CB /* Username.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E89422820341A003066CB /* Username.storyboard */; };
 		4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E89432820341A003066CB /* UsernameViewController.swift */; };
-		4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E894728203473003066CB /* WelcomeViewController.swift */; };
-		4A7E894D28203483003066CB /* welcom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E894C28203483003066CB /* welcom.storyboard */; };
 		4A7F2F9628215D59000984A9 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7F2F9528215D59000984A9 /* FeedDataModel.swift */; };
 		4A9459932823B8DA00056202 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9459912823B8DA00056202 /* StoryTableViewCell.swift */; };
 		4A9459942823B8DA00056202 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9459922823B8DA00056202 /* StoryTableViewCell.xib */; };
@@ -56,6 +54,8 @@
 		4AD2013B28216757005BE378 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013A28216757005BE378 /* Image.swift */; };
 		4AD2013D28216782005BE378 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013C28216782005BE378 /* Const.swift */; };
 		4AD2013F2821686E005BE378 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD2013E2821686E005BE378 /* Icon.swift */; };
+		4AE85ADC285A611000F26E9B /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE85ADB285A611000F26E9B /* Welcome.storyboard */; };
+		4AE85ADE285A6DC600F26E9B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE85ADD285A6DC600F26E9B /* WelcomeViewController.swift */; };
 		BECF56FEEE309EFCB3056F28 /* Pods_instagramLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C47CFCE1111F22C7F720C1 /* Pods_instagramLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,8 +94,6 @@
 		4A7E893E2820340A003066CB /* Password.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Password.storyboard; sourceTree = "<group>"; };
 		4A7E89422820341A003066CB /* Username.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Username.storyboard; sourceTree = "<group>"; };
 		4A7E89432820341A003066CB /* UsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
-		4A7E894728203473003066CB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		4A7E894C28203483003066CB /* welcom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = welcom.storyboard; sourceTree = "<group>"; };
 		4A7F2F9528215D59000984A9 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 		4A9459912823B8DA00056202 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		4A9459922823B8DA00056202 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -111,6 +109,8 @@
 		4AD2013A28216757005BE378 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4AD2013C28216782005BE378 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		4AD2013E2821686E005BE378 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		4AE85ADB285A611000F26E9B /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		4AE85ADD285A6DC600F26E9B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AE7C81D0A937CC456FFE26A7 /* Pods-instagramLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramLogin.release.xcconfig"; path = "Target Support Files/Pods-instagramLogin/Pods-instagramLogin.release.xcconfig"; sourceTree = "<group>"; };
 		B45E4EFBA4E83CF9D2FE1164 /* Pods-instagramLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramLogin.debug.xcconfig"; path = "Target Support Files/Pods-instagramLogin/Pods-instagramLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		F9C47CFCE1111F22C7F720C1 /* Pods_instagramLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,11 +158,11 @@
 				4A7E8937282033F4003066CB /* Completion */,
 				4A7E893C2820340A003066CB /* Password */,
 				4A7E89412820341A003066CB /* Username */,
-				4A7E894628203473003066CB /* Welcome */,
 				4A476B4927FB319300E653CB /* Assets.xcassets */,
 				4A476B4027FB319300E653CB /* AppDelegate.swift */,
 				4A476B4427FB319300E653CB /* ViewController.swift */,
 				4A476B4227FB319300E653CB /* SceneDelegate.swift */,
+				4AE85ADB285A611000F26E9B /* Welcome.storyboard */,
 				4A476B4B27FB319300E653CB /* LaunchScreen.storyboard */,
 				4A753941282D088800726501 /* Main.storyboard */,
 				4A476B4E27FB319300E653CB /* Info.plist */,
@@ -275,18 +275,9 @@
 			children = (
 				4A7E89432820341A003066CB /* UsernameViewController.swift */,
 				4A7E89422820341A003066CB /* Username.storyboard */,
+				4AE85ADD285A6DC600F26E9B /* WelcomeViewController.swift */,
 			);
 			path = Username;
-			sourceTree = "<group>";
-		};
-		4A7E894628203473003066CB /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				4A7E894728203473003066CB /* WelcomeViewController.swift */,
-				4A7E894C28203483003066CB /* welcom.storyboard */,
-			);
-			name = Welcome;
-			path = "../../../../../../Downloads/HwangChanMi-main/instagramLogin/instagramLogin/Welcome";
 			sourceTree = "<group>";
 		};
 		4A9459952823B99E00056202 /* CollectionViewCell */ = {
@@ -438,9 +429,9 @@
 				4A7E8935282033B4003066CB /* TabBar.storyboard in Resources */,
 				4A7E893B282033F4003066CB /* Completion.storyboard in Resources */,
 				4A7E892D282033B4003066CB /* Shop.storyboard in Resources */,
+				4AE85ADC285A611000F26E9B /* Welcome.storyboard in Resources */,
 				4A7E8933282033B4003066CB /* Profile.storyboard in Resources */,
 				4A7E89402820340A003066CB /* Password.storyboard in Resources */,
-				4A7E894D28203483003066CB /* welcom.storyboard in Resources */,
 				4A7E89442820341A003066CB /* Username.storyboard in Resources */,
 				4A476B4A27FB319300E653CB /* Assets.xcassets in Resources */,
 				4A9459942823B8DA00056202 /* StoryTableViewCell.xib in Resources */,
@@ -506,6 +497,7 @@
 				4AAE497C282190B20064556D /* StoryCollectionViewCell.swift in Sources */,
 				4A476B4527FB319300E653CB /* ViewController.swift in Sources */,
 				4A7C9BAD282CD42000F8B251 /* UserService.swift in Sources */,
+				4AE85ADE285A6DC600F26E9B /* WelcomeViewController.swift in Sources */,
 				4AD2013D28216782005BE378 /* Const.swift in Sources */,
 				4AD2013B28216757005BE378 /* Image.swift in Sources */,
 				4A7E8936282033B4003066CB /* TabBarController.swift in Sources */,
@@ -514,7 +506,6 @@
 				4A7E8931282033B4003066CB /* SearchViewController.swift in Sources */,
 				4A75D2AF282052E5001B5DB4 /* FeedTableViewCell.swift in Sources */,
 				4AA99971283024CC009AA2C8 /* UIImageView+.swift in Sources */,
-				4A7E894A28203473003066CB /* WelcomeViewController.swift in Sources */,
 				4A7E892E282033B4003066CB /* ShopViewController.swift in Sources */,
 				4A7E89452820341A003066CB /* UsernameViewController.swift in Sources */,
 				4A7E890D282032CD003066CB /* UITexField++.swift in Sources */,
@@ -679,7 +670,7 @@
 				INFOPLIST_FILE = instagramLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -707,7 +698,7 @@
 				INFOPLIST_FILE = instagramLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
