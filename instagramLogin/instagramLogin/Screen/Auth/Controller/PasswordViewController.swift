@@ -40,8 +40,9 @@ class PasswordViewController: UIViewController {
         completionVC.nameData = nameData
         completionVC.passwordData = pwTextField.text
         
-        
-        self.present(completionVC, animated: true, completion: nil)
+        self.present(completionVC, animated: true) {
+            self.navigationController?.popToRootViewController(animated: false)
+        }
     }
     
     

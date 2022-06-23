@@ -28,7 +28,6 @@ class UsernameViewController: UIViewController {
       self.navigationController?.popViewController(animated: true)
     }
     
-    
     // 다음 버튼, textfield의 데이터를 다음 VC로 넘겨 준다. push
     @IBAction func nextButton(_ sender: Any) {
         let passwordSB = UIStoryboard(name: "Password", bundle: nil)
