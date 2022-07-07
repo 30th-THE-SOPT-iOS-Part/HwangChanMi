@@ -13,7 +13,13 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var instaimage: UIImageView!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var eyeButtn: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.isEnabled = false
+        }
+    }
     
     var nameData: String?
     
@@ -27,6 +33,12 @@ class WelcomeViewController: UIViewController {
         instaimage.image = UIImage(named: "Instagram Black Logo.png")
         userNameTextField.clearButtonMode = .whileEditing
     }
+    
+    @IBAction func showEyeBtnDidTap(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        passwordTextField.isSecureTextEntry = sender.isSelected
+    }
+    
     
     // 가입하기 버튼, 다음 VC로 데이터 push
     @IBAction func joinButton(_ sender: Any) {

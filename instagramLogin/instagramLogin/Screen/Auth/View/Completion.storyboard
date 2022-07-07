@@ -17,31 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="U4i-wf-3Mi">
-                                <rect key="frame" x="35" y="374.5" width="344" height="157"/>
+                                <rect key="frame" x="35" y="310" width="344" height="159.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-dO-IgK">
-                                        <rect key="frame" x="23" y="0.0" width="298.5" height="93"/>
+                                        <rect key="frame" x="23" y="0.0" width="298.5" height="95.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OOO님, instagram에 오신 것을 환영합니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwo-Ex-s0d">
-                                                <rect key="frame" x="36" y="0.0" width="226" height="58"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="58" id="piA-dC-wVK"/>
-                                                    <constraint firstAttribute="width" constant="226" id="y7j-r0-54c"/>
-                                                </constraints>
+                                                <rect key="frame" x="19.5" y="0.0" width="259.5" height="57.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isp-AS-vhb">
-                                                <rect key="frame" x="0.0" y="77" width="298.5" height="16"/>
+                                                <rect key="frame" x="0.0" y="79.5" width="298.5" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="isp-AS-vhb" firstAttribute="top" secondItem="uwo-Ex-s0d" secondAttribute="bottom" constant="22" id="jel-Dz-awc"/>
+                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD0-R3-uJe">
-                                        <rect key="frame" x="22" y="117" width="300" height="40"/>
+                                        <rect key="frame" x="22" y="119.5" width="300" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="NKV-j1-W4O"/>
                                             <constraint firstAttribute="height" constant="40" id="bwV-8Y-ZtZ"/>
@@ -53,9 +52,15 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="eD0-R3-uJe" firstAttribute="top" secondItem="isp-AS-vhb" secondAttribute="bottom" constant="24" id="btK-ce-GGu"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYe-3q-u12">
-                                <rect key="frame" x="124.5" y="549.5" width="165" height="31"/>
+                                <rect key="frame" x="124.5" y="490.5" width="165" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="QL2-ZR-eZF"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기"/>
                                 <connections>
@@ -66,11 +71,11 @@
                         <viewLayoutGuide key="safeArea" id="4Up-ZM-HYt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="U4i-wf-3Mi" firstAttribute="top" secondItem="4Up-ZM-HYt" secondAttribute="top" constant="266" id="6iA-Va-LH4"/>
                             <constraint firstItem="U4i-wf-3Mi" firstAttribute="centerX" secondItem="4Up-ZM-HYt" secondAttribute="centerX" id="Hrg-A1-fhK"/>
-                            <constraint firstItem="U4i-wf-3Mi" firstAttribute="centerY" secondItem="4Up-ZM-HYt" secondAttribute="centerY" id="IBR-5P-eVk"/>
                             <constraint firstItem="MYe-3q-u12" firstAttribute="centerX" secondItem="4Up-ZM-HYt" secondAttribute="centerX" id="ffE-aR-m9N"/>
                             <constraint firstItem="U4i-wf-3Mi" firstAttribute="leading" secondItem="4Up-ZM-HYt" secondAttribute="leading" constant="35" id="k4q-xI-ghA"/>
-                            <constraint firstItem="MYe-3q-u12" firstAttribute="top" secondItem="eD0-R3-uJe" secondAttribute="bottom" constant="18" id="kCE-Sl-5Si"/>
+                            <constraint firstItem="MYe-3q-u12" firstAttribute="top" secondItem="eD0-R3-uJe" secondAttribute="bottom" constant="21" id="kCE-Sl-5Si"/>
                         </constraints>
                     </view>
                     <connections>

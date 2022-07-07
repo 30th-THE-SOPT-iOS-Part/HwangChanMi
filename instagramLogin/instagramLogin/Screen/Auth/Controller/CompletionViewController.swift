@@ -29,31 +29,21 @@ class CompletionViewController: UIViewController {
     
     @IBAction func completionButton(_ sender: Any) {
         // 완료 버튼 클릭 -> 탭 바 화면으로 이동
-        signUp()
+//        signUp()
         
-//        let tabbarSB = UIStoryboard(name: "TabBar", bundle: nil)
-//        let tabbarCV = tabbarSB.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
-//
-//        tabbarCV.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-//        present(tabbarCV, animated: true, completion: nil)
-//
-//        guard let welcomeVC = self.presentingViewController as? UINavigationController else { return }
-//
-//        self.dismiss(animated: true) {
-//            welcomeVC.popToRootViewController(animated: true)
+        let tabBarVC = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
         
+        guard let rootVC = self.view.window else { return }
+        rootVC.rootViewController = tabBarVC
+        rootVC.makeKey()
     }
 
     
     @IBAction func otherAccountButton(_ sender: Any) {
         // 처음 화면으로 돌아가기
-        guard let welcomeVC = self.presentingViewController as? UINavigationController else { return }
 
-        self.dismiss(animated: true) {
-            welcomeVC.popToRootViewController(animated: true)
-        }
+        self.dismiss(animated: true)
     }
-    
 }
 
 extension CompletionViewController {
